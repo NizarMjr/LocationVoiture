@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+.option {
+    font-size: 3rem;
+    position: fixed;
+    top: 55%;
+    cursor: pointer;
+    left: 300px;
+    z-index: 999;
+    transition: var(--transition);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.option-list {
+    top: 30%;
+    width: 200px;
+    height: 400px;
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    position: fixed;
+    z-index: 999;
+    transition: var(--transition);
+    box-shadow: -3px 2px 0px 5px #757575;
+    padding: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.option-list .mode {
+    width: fit-content;
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.option-list .mode .night,
+.option-list .mode .light {
+    cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.option-list .mode .night {
+    margin-right: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.option-list .lang,
+.option-list .currency {
+    margin-bottom: 2rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.btn-list button {
+    padding: 1rem;
+    background-color: transparent;
+    cursor: pointer;
+    padding-left: 0;
+    transition: var(--transition);
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.btn-list button:hover {
+    transform: translateX(10px);
+    background-color: var(--color-primary);
+    padding-left: 1rem;
 }

@@ -1,0 +1,110 @@
+.promotion {
+    background-color: var(--color-white);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container .intro {
+    width: 75%;
+    margin: 0 auto;
+    letter-spacing: 1px;
+    color: #444;
+    text-align: center;
+}
+
+.container .intro span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.car-models {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+.car .car-model {
+    background-color: #222;
+    color: var(--color-white);
+}
+
+.car .car-price {
+    margin: 10px 0;
+    font-size: 0.9rem;
+}
+
+.car .car-price span {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.promotion-content {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    padding: 2rem 3.5rem;
+}
+
+.promotion-content .google-rate {
+    flex-basis: 250px;
+    background-color: var(--color-second);
+    color: white;
+    padding: 3rem 1rem 4rem;
+    max-height: 300px;
+}
+
+.promotion-content .google-rate h2 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.promotion .google-rate p {
+    font-weight: 500;
+    font-size: 1.02rem;
+}
+
+.promotion-content .contents {
+    padding: 2rem 1rem;
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2.5rem;
+}
+
+.contents .content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contents .content .icon:first-child {
+    font-size: 2rem;
+}
+
+/*=================SMALL SCREEN=================*/
+@media (max-width:772px) {
+
+    .promotion-content {
+        flex-direction: column;
+    }
+
+    .promotion-content .google-rate {
+        height: fit-content;
+        flex-basis: 0;
+        text-align: center;
+        padding: 0.6rem;
+    }
+
+    .promotion-content .google-rate h2 {
+        margin-bottom: 10px;
+        margin: 0;
+    }
+}
+
+/*=================MEDIUM SCREEN=================*/
+@media (max-width:991px) {
+    .promotion-content .google-rate {
+        margin: auto 0;
+    }
+}

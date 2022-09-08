@@ -1,0 +1,78 @@
+.service {
+    background-color: var(--color-white);
+}
+
+.service .container .our-service {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.container .our-service .image {
+    width: 100%;
+}
+
+.our-service .image img {
+    max-width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.our-service .serv-name {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.our-service .serv-desc {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.description {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, (300px, 1fr));
+    gap: 1rem;
+}
+
+.description .intro_ {
+    margin: 0 auto;
+    font-size: 0.9rem;
+    line-height: 2;
+    max-width: 300px;
+    height: fit-content;
+    background-color: var(--color-primary);
+    opacity: 0.8;
+    border-radius: 15px;
+    padding: 1rem;
+    position: relative;
+}
+
+.description .intro_::before {
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    border-radius: 15px;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.desc-content {
+    display: flex;
+    gap: 1rem;
+}
+
+.desc-content .content {
+    margin-bottom: 15px;
+    border-radius: 7px;
+    background-color: var(--color-bg);
+    padding: 1rem;
+}
+
+.desc-content .content .title {
+    text-align: center;
+    margin: 10px 0;
+}

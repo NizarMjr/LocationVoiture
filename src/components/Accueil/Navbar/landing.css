@@ -1,0 +1,91 @@
+.landing {
+    background: url('../../../images/background.jpg');
+    background-size: cover;
+    height: 90vh;
+    position: relative;
+}
+
+.landing .form {
+    position: absolute;
+    width: 500px;
+    min-height: 450px;
+    padding: 1rem 1.2rem;
+    margin: 5rem;
+    background-color: rgb(238, 238, 238, 70%);
+}
+
+.form h3 {
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+}
+
+.form small {}
+
+.form .checkbox {
+    margin-bottom: 20px;
+}
+
+.checkbox input {
+    margin-right: 5px;
+}
+
+.form .primary-select {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    padding: 0.8rem;
+}
+
+.date-time {
+    display: flex;
+    justify-content: space-between;
+}
+
+.date-time .date,
+.date-time .heure {
+    display: flex;
+    flex-direction: column;
+}
+
+.date input,
+.heure select {
+    width: 300px;
+    padding: 0.8rem;
+    margin: 10px 0;
+}
+
+.heure select {
+    width: 100px;
+}
+
+.reservation {
+    display: flex;
+    align-items: center;
+}
+
+.reservation input {
+    background-color: transparent;
+    margin-left: 5px;
+}
+
+/*===============SMALL SCREEN================*/
+@media (max-width:767px) {
+    .landing {
+        margin-bottom: 3rem;
+        height: 150vh;
+    }
+
+    .landing .form {
+        max-width: 100%;
+        height: fit-content;
+        margin: 0;
+    }
+
+    .date-time {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
