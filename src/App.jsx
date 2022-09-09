@@ -1,21 +1,38 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import Accueil from './components/Accueil/Accueil';
 import { BiArrowToTop } from 'react-icons/bi'
 import { CgPushChevronRight } from 'react-icons/cg'
 import { MdDarkMode, MdLightMode } from 'react-icons/md'
+import Tarif from './components/Tarif/Tarif';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Navbar from './components/Accueil/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
+
 
 function App() {
-  const [listPos, setlistPos] = useState('-200px');
+  const [listPos, setlistPos] = useState('-300px');
   const [btnPos, setbtnPos] = useState('0');
   const [mode, setMode] = useState('light')
   const [lang, setLang] = useState('fr');
   const [curr, setCurrency] = useState('eur');
 
   const updatePos = () => {
-    setlistPos(listPos === '-200px' ? '0' : '-200px');
-    setbtnPos(btnPos === '0' ? '200px' : '0');
+    setlistPos(listPos === '-300px' ? '0' : '-300px');
+    setbtnPos(btnPos === '0' ? '300px' : '0');
   }
+  const [scroll, setScroll] = useState(0);
+  const [scrollDisplay, setDisplay] = useState('');
+
+  const currentpos = () => {
+    setScroll(window.pageYOffset);
+  }
+  useEffect(() => {
+    window.addEventListener("scroll", currentpos);
+    if (scroll > 1000)
+      setDisplay('flex');
+    if (scroll <= 1000) setDisplay('none');
+  })
 
   return (
     <div className="App" style={mode === 'light' ? { backgroundColor: '#eee', color: 'black' } : { backgroundColor: 'black', color: 'white' }}>
@@ -39,7 +56,15 @@ function App() {
 
         </div>
       </div>
-      <Accueil />
+      <Navbar />
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' exact element={<Accueil />} />
+          <Route path='/tarif' exact element={<Tarif />} />
+        </Routes>
+      </BrowserRouter>
+      <a href="#" style={{ display: scrollDisplay }} className="scroll-to-top"><BiArrowToTop /></a>
+      <Footer />
     </div>
   );
 }

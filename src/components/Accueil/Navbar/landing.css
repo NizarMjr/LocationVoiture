@@ -1,7 +1,7 @@
 .landing {
     background: url('../../../images/background.jpg');
     background-size: cover;
-    height: 90vh;
+    height: 100vh;
     position: relative;
 }
 
@@ -73,11 +73,12 @@
 /*===============SMALL SCREEN================*/
 @media (max-width:767px) {
     .landing {
-        margin-bottom: 3rem;
+        margin: 4rem 0;
         height: 150vh;
     }
 
     .landing .form {
+        display: none;
         max-width: 100%;
         height: fit-content;
         margin: 0;

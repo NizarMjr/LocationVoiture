@@ -168,5 +168,121 @@
             "name": "Location voiture boite automatique",
             "desc": "un grand confort à bord, une motorisation silencieuse: Suzuki swift, Kia picanto, Hyundai i10"
         }
+    ],
+    "tarif": [
+        {
+            "classe": "A",
+            "voiture": "Hyundai i10",
+            "jours": "22€",
+            "semaine": "20€"
+        },
+        {
+            "classe": "A",
+            "voiture": "Skoda Fabia ",
+            "jours": "22€",
+            "semaine": "20€"
+        },
+        {
+            "classe": "A",
+            "voiture": "Renault CLIO Symbole (AC)",
+            "jours": "22€",
+            "semaine": "20€"
+        },
+        {
+            "classe": "B",
+            "voiture": "Seat Ibiza (AC) Tunisie",
+            "jours": "25€",
+            "semaine": "22€"
+        },
+        {
+            "classe": "B",
+            "voiture": "Suzuki swift BVA",
+            "jours": "25€",
+            "semaine": "22€"
+        },
+        {
+            "classe": "B",
+            "voiture": "Volkswagen POLO (AC) Tunisie",
+            "jours": "25€",
+            "semaine": "22€"
+        },
+        {
+            "classe": "B",
+            "voiture": "Citroen C3 (AC) Tunisie",
+            "jours": "25€",
+            "semaine": "22€"
+        },
+        {
+            "classe": "B",
+            "voiture": "Fiat Grande PUNTO (AC) Tunisie",
+            "jours": "25€",
+            "semaine": "22€"
+        },
+        {
+            "classe": "B",
+            "voiture": "Ford Fiesta (AC) Tunisie",
+            "jours": "25€",
+            "semaine": "22€"
+        },
+        {
+            "classe": "B",
+            "voiture": "Peugeot 301 Tunisie",
+            "jours": "25€",
+            "semaine": "22€"
+        },
+        {
+            "classe": "D",
+            "voiture": "Renault KANGOO (AC) Tunisie",
+            "jours": "30€",
+            "semaine": "25€"
+        },
+        {
+            "classe": "D",
+            "voiture": "Renault KANGOO (AC) Tunisie",
+            "jours": "30€",
+            "semaine": "25€"
+        },
+        {
+            "classe": "C",
+            "voiture": "Renault MEGANE (AC) Tunisie",
+            "jours": "28€",
+            "semaine": "28€"
+        },
+        {
+            "classe": "C",
+            "voiture": "Ford Eco Sport",
+            "jours": "28€",
+            "semaine": "28€"
+        },
+        {
+            "classe": "C",
+            "voiture": "Volkswagen GOLF",
+            "jours": "28€",
+            "semaine": "28€"
+        },
+        {
+            "classe": "F",
+            "voiture": "Skoda Octavia Tunisie",
+            "jours": "40€",
+            "semaine": "35€"
+        },
+        {
+            "classe": "F",
+            "voiture": "BMW serie 3",
+            "jours": "40€",
+            "semaine": "35€"
+        },
+        {
+            "classe": "F",
+            "voiture": "Volkswagen PASSAT (AC)",
+            "jours": "40€",
+            "semaine": "35€"
+        },
+        {
+            "classe": "F",
+            "voiture": "Citroen Jumpy",
+            "jours": "80€",
+            "semaine": "70€"
+        }
     ]
 }

@@ -3,22 +3,23 @@
     position: fixed;
     top: 55%;
     cursor: pointer;
-    left: 300px;
+    left: 400px;
     z-index: 999;
     transition: var(--transition);
 }
 
 .option-list {
     top: 30%;
-    width: 200px;
+    width: 300px;
     height: 400px;
-    background-color: white;
-    border-radius: 5px;
-    color: black;
+    background-color: rgb(117, 117, 117, 80%);
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    color: var(--color-black);
     position: fixed;
     z-index: 999;
     transition: var(--transition);
-    box-shadow: -3px 2px 0px 5px #757575;
+    box-shadow: -3px 2px 0px 5px rgb(117, 117, 117);
     padding: 1rem;
 }
 
@@ -33,6 +34,15 @@
 .option-list .mode .night,
 .option-list .mode .light {
     cursor: pointer;
+    transition: var(--transition);
+}
+
+.option-list .mode .light:hover {
+    color: var(--color-primary);
+}
+
+.option-list .mode .night:hover {
+    color: navy;
 }
 
 .option-list .mode .night {
@@ -55,6 +65,7 @@
     transition: var(--transition);
     margin-bottom: 1rem;
     font-weight: bold;
+    display: block;
 }
 
 .btn-list button:hover {

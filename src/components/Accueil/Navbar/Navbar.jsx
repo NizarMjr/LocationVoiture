@@ -15,10 +15,6 @@ const Navbar = (props) => {
         if (scroll > 100)
             setPosition('fixed');
         if (scroll <= 100) setPosition('');
-        if (scroll > 1000)
-            getDisplay('flex')
-        if (scroll <= 1000) getDisplay('none');
-
     })
     return (
         <header className="header" style={{ position: position }}>
@@ -30,12 +26,12 @@ const Navbar = (props) => {
                 <div className="icon-bar" ><FaBars /></div>
                 <div className="navbar">
                     <ul className="lists">
-                        <li className="list"><a href="#">Accuel</a></li>
-                        <li className="list"><a href="#tarif">Tarif</a></li>
-                        <li className="list"><a href="#voiture">Voiture</a></li>
-                        <li className="list"><a href="#agence">Agence</a></li>
-                        <li className="list"><a href="#promotion">Promotion</a></li>
-                        <li className="list"><a href="#taxi-tunisie">Taxi Tunisie</a></li>
+                        <li className="list"><a href="/">Accuel</a></li>
+                        <li className="list"><a href="/tarif">Tarif</a></li>
+                        <li className="list"><a href="/voiture">Voiture</a></li>
+                        <li className="list"><a href="/agence">Agence</a></li>
+                        <li className="list"><a href="/promotion">Promotion</a></li>
+                        <li className="list"><a href="/taxi-tunisie">Taxi Tunisie</a></li>
                     </ul>
                 </div>
             </div>

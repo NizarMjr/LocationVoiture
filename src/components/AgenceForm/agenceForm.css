@@ -1,0 +1,51 @@
+.agence-form {
+    background-color: #ccc;
+    min-height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+    align-items: center;
+}
+
+
+.select {
+    flex-direction: column;
+    flex-basis: 400px;
+}
+
+.select>p,
+.agence-date>p,
+.agence-heure>p {
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+}
+
+.select select {
+    padding: 0.8rem 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.agence-dates-times {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    margin-right: 30px;
+}
+
+.agence-date-time {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 300px;
+}
+
+.agence-date input,
+.agence-heure select {
+    padding: 0.8rem 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.agence-form button {
+    margin-top: 1.8rem;
+}

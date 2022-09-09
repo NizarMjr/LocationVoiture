@@ -7,18 +7,12 @@ import Footer from '../Footer/Footer';
 import accueil from './accueil.css'
 import { BiArrowToTop } from 'react-icons/bi'
 const Accueil = () => {
-    const [scrollDisplay, setscrollDisplay] = useState('none');
-    const getDisplay = (display) => {
-        setscrollDisplay(display);
-    }
+
     return (
         <div className="accueil">
-            <Navbar getDisplay={getDisplay} />
             <Landing />
             <Promotion />
             <Service />
-            <Footer />
-            <a href="#" style={{ display: scrollDisplay }} className="scroll-to-top"><BiArrowToTop /></a>
         </div>
     )
 }

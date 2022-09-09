@@ -1,0 +1,45 @@
+.tarif {
+    background-color: var(--color-white);
+}
+
+.tarif-intro,
+.tarif-note {
+    font-size: 0.9rem;
+    color: #333;
+    margin: 0.5rem 0;
+}
+
+.tarif-list {
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+.tarif-list .list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0.5rem;
+    border-bottom: 1px solid #ccc;
+    font-size: 0.9rem;
+}
+
+.tarif-list .list-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+    align-items: center;
+}
+
+.tarif-list .list-title h3 {
+    flex-basis: 100px;
+}
+
+.tarif-list .list .voitures {
+    flex-basis: 300px;
+    font-style: italic;
+}
+
+.tarif-note span {
+    font-weight: bold;
+}
